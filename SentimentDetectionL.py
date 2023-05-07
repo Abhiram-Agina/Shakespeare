@@ -12,16 +12,16 @@ st.title("Library-Based Sentiment Detection")
 sonnetInput = st.text_area("Paste Shakespearean Sonnet Here:") 
 
 blob = TextBlob(sonnetInput)
-print('sentiment of the sonnet is:', blob.sentiment)
+st.write('sentiment of the sonnet is:', blob.sentiment)
 
 if blob.sentiment.polarity < 0:
-  print("negative sentiment")
+  st.write("negative sentiment")
 else:
-  print("positive sentiment")
+  st.write("positive sentiment")
 
 if blob.sentiment.subjectivity < 0.5:
-  print("objective")
+  st.write("objective")
 else:
-  print("subjective")
+  st.write("subjective")
   
 #blob.words
