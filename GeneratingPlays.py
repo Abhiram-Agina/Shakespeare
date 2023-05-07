@@ -35,7 +35,6 @@ char2idx = {u:i for i, u in enumerate(vocab)}
 idx2char = np.array(vocab)
 text_as_int = np.array([char2idx[c] for c in completeWorks])
 
-text_as_int[:12] # returns first 12 characters from the entire text: array([18, 47, 56, 57, 58,  1, 15, 47, 58, 47, 64, 43]) NOTE: 2nd, 8th and 10th characters are all 'i'
 
 # Create training examples / targets
 char_dataset = tf.data.Dataset.from_tensor_slices(text_as_int)
