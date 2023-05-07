@@ -15,5 +15,6 @@ st.markdown(
 * [Sentiment Detection](https://abhiram-agina-shakespeare-sentimentdetectionl-dt0usp.streamlit.app/)
 * [Basic Insult Generator](https://abhiram-agina-shakespeare-insultgeneratorbasic-9povu7.streamlit.app/)
 * [Basic Quote Generator](https://abhiram-agina-shakespeare-quotegeneratorbasic-ltfk2v.streamlit.app/)
+* [Wacky Insult Generator](https://abhiram-agina-shakespeare-randomizedinsults-hfug85.streamlit.app/)
 '''
 )
