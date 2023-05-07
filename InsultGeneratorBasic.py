@@ -11,4 +11,5 @@ if st.button('Generate an Insult'):
   
   st.write("Topic: ", str(df.iat[rand_num, 1]).upper())
   st.write("Line: ", df.iat[rand_num, 2])
-  st.write("Act: ", df.iat[rand_num, 3], "\nScene: ", str(df.iat[rand_num, 4]))
+  st.write("Act: ", df.iat[rand_num, 3])
+  st.write("Scene: ", str(df.iat[rand_num, 4]))
