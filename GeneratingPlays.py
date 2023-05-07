@@ -178,6 +178,8 @@ def generate_text(model, num_generate, temperature, start_string):
 
   return (start_string + ''.join(text_generated)) # returns our final prediction value
 
+st.title("Generating Shakespearean Plays")
+
 startingString = st.text_area('Enter an intriductory statement for me to build off of:')
 generated_text = generate_text(
                     model, 
@@ -185,4 +187,5 @@ generated_text = generate_text(
                     temperature=1, 
                     start_string = startingString)
 
+st.header("Resulting Text")
 st.write(generated_text)
