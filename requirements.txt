@@ -7,4 +7,3 @@ streamlit_pandas
 spacy
 spacy-streamlit
 tensorflow
-textblob
