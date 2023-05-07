@@ -5,7 +5,7 @@ import pandas as pd
 
 st.write("Hello")
 
-file = "Shakespeare_data.csv"
+file = "FILES/Shakespeare_Insults - insults.csv"
 df = pd.read_csv(file)
 
 if st.button('Random Player Line'):
