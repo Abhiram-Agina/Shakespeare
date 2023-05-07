@@ -1,6 +1,7 @@
 import functools
 import random
 import sys
+import streamlit as st
 
 
 def applyto(*args):
