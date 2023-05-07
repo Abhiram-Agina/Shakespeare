@@ -2,3 +2,7 @@ streamlit
 textblob
 wordcloud
 matplotlib
+pandas
+streamlit_pandas
+spacy
+spacy-streamlit
