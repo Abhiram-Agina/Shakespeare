@@ -1,7 +1,10 @@
 import streamlit as st
 import pandas as pd
+from PIL import Image
 
 st.title("**Shakespeare - Natural Language Processing**")
+
+shakespearePortraitPic = Image.open("IMAGES/ShakespearePortrait.png")
 
 st.header("*Apps*")
 st.markdown(
