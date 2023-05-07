@@ -1,6 +1,8 @@
 import streamlit as st
 import nltk
 import tensorflow as tf
+import textblob_download_utils
+from textblob import TextBlob
 
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
@@ -8,8 +10,6 @@ nltk.download('averaged_perceptron_tagger')
 st.title("Library-Based Sentiment Detection")
 
 sonnetInput = st.text_area("Paste Shakespearean Sonnet Here:") 
-
-from textblob import TextBlob
 
 blob = TextBlob(sonnetInput)
 print('sentiment of the sonnet is:', sonnetInput.sentiment)
