@@ -31,7 +31,6 @@ def insult(*args):
      )
 
 if __name__ == "__main__":
-    print("WATERMELON")
     filenames = ['FILES/w1.txt', 'FILES/w2.txt', 'FILES/w3.txt']
     filenames = sys.argv[1:] or filenames
-    print(insult(*filenames))
+    st.write(insult(*filenames))
