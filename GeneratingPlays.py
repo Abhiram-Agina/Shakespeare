@@ -20,8 +20,6 @@ completeWorks = completeWorks.decode(encoding='utf-8')
 print ('Total number of characters in the corpus is:', len(completeWorks)) # returns 1115394
 print('The first 100 characters of the corpus are as follows:\n', completeWorks[:100])
 
-"""#### Vectorizing Text"""
-
 #Vectorizing Text
 vocab = sorted(set(completeWorks)) #set(text) function returns a set of unique characters in the text file
 print ('The number of unique characters in the corpus is', len(vocab)) 
@@ -37,20 +35,13 @@ char2idx = {u:i for i, u in enumerate(vocab)}
 idx2char = np.array(vocab)
 text_as_int = np.array([char2idx[c] for c in completeWorks])
 
-char2idx
-
-idx2char
-
 text_as_int[:12] # returns first 12 characters from the entire text: array([18, 47, 56, 57, 58,  1, 15, 47, 58, 47, 64, 43]) NOTE: 2nd, 8th and 10th characters are all 'i'
-
-"""#### Creating Training Data"""
 
 # Create training examples / targets
 char_dataset = tf.data.Dataset.from_tensor_slices(text_as_int)
 seq_length = 100 # The max. length for single input
 
-sequences = char_dataset.batch(seq_length+1, drop_remainder=True) 
-sequences # returns <_BatchDataset element_spec=TensorSpec(shape=(101,), dtype=tf.int64, name=None)>
+sequences = char_dataset.batch(seq_length+1, drop_remainder=True) # returns <_BatchDataset element_spec=TensorSpec(shape=(101,), dtype=tf.int64, name=None)>
 
 # for item in sequences.take(5): 
 #   print(repr(''.join(idx2char[item.numpy()])))
@@ -61,7 +52,6 @@ def split_input_target(chunk):
   return input_text, target_text
 
 dataset = sequences.map(split_input_target)
-dataset
 
 # suffle the dataset and split it into 64 sentence batches
 
@@ -69,8 +59,6 @@ BUFFER_SIZE = 10000 # TF shuffles the data only within buffers
 BATCH_SIZE = 64 # Batch size of 64 sentences each --> model accepts 64 input sentences at a time.
 dataset = dataset.shuffle(BUFFER_SIZE).batch(BATCH_SIZE, drop_remainder=True)
 print(dataset) # returns <_BatchDataset element_spec=(TensorSpec(shape=(64, 100), dtype=tf.int64, name=None), TensorSpec(shape=(64, 100), dtype=tf.int64, name=None))>
-
-"""#### Building the Model"""
 
 # set parameters for the Model
 # Length of the vocabulary in chars
@@ -110,8 +98,6 @@ model = build_model(
     batch_size=BATCH_SIZE)  # 64 for the traning
 
 model.summary()
-
-"""#### Compiling & Training Model"""
 
 # set our loss function and optimizer
 
