@@ -5,6 +5,7 @@ from PIL import Image
 st.title("**Shakespeare - Natural Language Processing**")
 
 shakespearePortraitPic = Image.open("IMAGES/ShakespearePortrait.jpeg")
+st.image(shakespearePortraitPic, width = 150)
 
 st.header("*Apps*")
 st.markdown(
