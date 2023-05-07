@@ -6,7 +6,7 @@ import pandas as pd
 file = "FILES/Shakespeare_Insults - quotes.csv"
 df = pd.read_csv(file)
 
-if st.button('Generate an Insult'):
+if st.button('Generate a Quote'):
   rand_num = random.randint(1, (df.shape[0] - 1))
   
   st.write("Topic: ", str(df.iat[rand_num, 1]).upper())
