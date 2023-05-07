@@ -27,7 +27,7 @@ def insult(*args):
     return applyto(
         [read_file(it) for it in list(args)],
         lambda content: combine(*content),
-        format_insult(*args)
+        format_insult
      )
 
 if __name__ == "__main__":
