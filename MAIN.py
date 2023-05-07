@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from PIL import Image
 
-st.title(Bard v Bot)
+st.title(Bard vs Bot)
 st.header("**Shakespeare - Natural Language Processing**")
 
 shakespearePortraitPic = Image.open("IMAGES/ShakespearePortrait.jpeg")
