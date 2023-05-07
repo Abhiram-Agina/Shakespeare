@@ -1,0 +1,88 @@
+Insult/Quote,Topic,TEXT,Play,Act,Scene
+Quote,funny,Thou sodden-witted lord! thou hast no more brain than I have in mine elbows.,Troilus And Cressida,2,1
+Quote,funny,"I do bite my thumb, sir.",Romeo And Juliet,1,1
+Quote,funny,Would thou wert clean enough to spit upon!,Timon Of Athens,4,3
+Quote,funny,"Go, prick thy face and over-red thy fear, / Thou lily-livered boy.",Macbeth,5,3
+Quote,funny,I do desire we may be better strangers.,As You Like It,3,2
+Quote,funny,There’s no more faith in thee than in a stewed prune.,Henry IV,3,3
+Quote,funny,"Thou whoreson zed, thou unnecessary letter!",King Lear,2,2
+Quote,funny,You are not worth another word else I’d call you knave.,All'S Well That Ends Well,2,3
+Quote,funny,You Banbury cheese!,Merry Wives Of Windsor,1,1
+Quote,funny,I am sick when I do look on thee.,A Midsummer Night'S Dream,2,1
+Quote,friendship,"But where there is true friendship, there needs none.",Timon Of Athens,1,2
+Quote,friendship,The band that seems to tie their friendship together will be the very strangler of their amity.,Antony And Cleopatra,2,6
+Quote,friendship,That which I would discover / The law of friendship bids me to conceal.,Two Gentlemen Of Verona,3,1
+Quote,friendship,Friendship is constant in all other things / Save in the office and affairs of love.,Much Ado About Nothing,2,1
+Quote,friendship,Thy friendship makes us fresh.,Henry IV,3,3
+Quote,friendship,Keep thy friend / Under thy own life’s key.,All'S Well That Ends Well,1,1
+Quote ,friendship,I count myself in nothing else so happy / As in a soul remembering my good friends.,Richard III,2,3
+Quote,friendship,"Most friendship is feigning, most loving is folly.",As You Like It,2,7
+Quote,friendship,There is flattery in friendship.,Henry IV,3,7
+Quote,love,The course of true love never did run smooth.,A Midsummer Night'S Dream,1,1
+Quote,love,"If music be the food of love, play on.",Twelfth Night,1,1
+Quote,love,"Speak low, if you speak love.",Much Ado About Nothing,2,1
+Quote,love,The sight of lovers feedeth those in love.,As You Like It,2,4
+Quote,love,There’s beggary in the love that can be reckoned.,Antony And Cleopatra,1,1
+Quote,love,"A heart to love, and in that heart / Courage, to make’s love known.",Macbeth,2,3
+Quote,love,"Love sought, is good; but given unsought, is better.",Twelfth Night,3,1
+Quote,love,"Love looks not with the eyes but with the mind, / And therefore is winged Cupid painted blind.",A Midsummer Night'S Dream,1,1
+Quote,love,"Hear my soul speak: / The very instant that I saw you, did / My heart fly to your service.",The Tempest,3,1
+Quote,marriage,Hanging and wiving goes by destiny.,The Merchant Of Venice,2,9
+Quote,marriage,"Thou art sad; get thee a wife, get thee a wife!",Much Ado About Nothing,5,4
+Quote,marriage,"For what is wedlock forced but a hell, / An age of discord and continual strife? / Whereas the contrary bringeth bliss, / And is a pattern of celestial peace.",Henry IV,5,5
+Quote,marriage,Who wooed in haste and means to wed at leisure.,Taming Of The Shrew,3,2
+Quote,marriage,Marriage is a matter of more worth / Than to be dealt in by attorneyship.,Henry IV,5,5
+Quote,marriage,"The instances that second marriage move / Are base respects of thrift, but none of love.",Hamlet,3,2
+Quote,marriage,Time goes on crutches till love hath all his rites.,Much Ado About Nothing,2,1
+Quote,marriage,"Get thee a good husband, and use him as he uses thee.",All'S Well That Ends Well,1,1
+Quote,marriage,"If men could be contented to be what they are, there were no fear in marriage.",All'S Well That Ends Well,1,3
+Quote,marriage,"Fools are as like husbands as pilchards are to herrings, the husband's the bigger.",Twelfth Night,3,1
+Quote,pride,This above all - to thine own self be true.,Hamlet,1,3
+Quote,pride,We are such stuff as dreams are made on.,The Tempest,4,1
+Quote,pride,"...it is not enough to speak, but to speak true.",A Mid Summer Night'S Dream,5,1
+Quote,pride,"But come what may, I do adore thee so that danger shall seem sport, and I will go.",Twelfth Night,2,1
+Quote,pride,"...we know what we are, but know not what we may be.",Hamlet,4,5
+Quote,pride,"Our doubts are traitors, and make us lose the good we oft might win, by fearing to attempt.",Measure For Measure,1,4
+Quote,pride,What’s past is prologue.,The Tempest,2,1
+Quote,pride,"Let me be that I am, and seek not to alter me.",Much Ado About Nothing,1,3
+Quote,pride,I had rather hear my dog bark at a crow than a man swear he loves me.,Much Ado About Nothing,1,1
+Quote,environment,One touch of nature makes the whole world kin…,Troilus And Cressida,3,3
+Quote,environment,"For, being green, there is great hope…",Henry VI Part II,3,1
+Quote,environment,"Take but degree away, untune that string, And, hark, what discord follows. Each thing meets In mere oppugnancy. The bounded waters Should lift their bosoms higher than the shores And make a sop of all this solid globe…",Troilus And Cressida,1,3
+Quote,environment,"And this our life, exempt from public haunt, Finds tongues in trees, books in the running brooks, Sermons in stones, and good in everything.",As You Like It,2,1
+Quote,environment,But I am now about no waste; I am about thrift.,The Merry Wives Of Windsor,1,3
+Quote,environment,And thorough this distemperature we see / The seasons alter…,A Mid Summer Night'S Dream,2,1
+Quote,environment,All things are ready if our minds be so.,Henry V,4,3
+Quote,environment,"Our remedies oft in ourselves do lie, / Which we ascribe to heaven.",All’S Well That Ends Well,1,1
+Quote,environment,Nature craves / All dues be rendered to their owners.,Troilus And Cressida,2,2
+Quote,environment,"I know a bank where the wild thyme blows, Where oxlips and the nodding violet grows, Quite over-canopied with luscious woodbine, With sweet musk-roses and with eglantine.",A Midsummer Night’S Dream,2,1
+Quote,environment,"O, I have ta'en / Too little care of this.",King Lear,3,4
+Quote,environment,The skies look grimly / And threaten present blusters.,The Winter'S Tale,3,4
+Quote,father,"Why, ’tis a happy thing / To be the father unto many sons.",Henry VI Part III,3,2
+Quote,father,I would my father look’d but with my eyes.,A Midsummer Night'S Dream,1,1
+Quote,father,"If by chance I talk a little wild, forgive me; I had it from my father.",Henry VIII,1,4
+Quote,father,"My father's wit, and my mother's tongue, assist me!",Love'S Labours Lost,1,3
+Quote,father,"To you your father should be as a god, / One that composed your beauties, yea, and one / To whom you are but as a form in wax, / By him imprinted and within his power / To leave the figure or disfigure it.", A Midsummer Night'S Dream,1,1
+Quote,father,"O, that our fathers would applause our loves, / To seal our happiness with their consents!",Two Gentlemen Of Verona,1,3
+Quote,father,It is a wise father that knows his own child.,Merchant Of Venice,2,2
+Quote,father,Who would be a father!,Othello,1,1
+Quote,anger,This tiger-footed rage.,Coriolanus,3,1
+Quote,anger,Come not between the dragon and his wrath!,King Lear,1,1
+Quote,anger,I understand a fury in your words / But not the words.,Othello,4,2
+Quote,anger,"Anger is like / A full hot horse, who being allowed his way, / Self-mettle tires him.",Henry VIII,1,1
+Quote,anger,Heat not a furnace for your foe so hot / That it do singe yourself.,Henry VIII,1,1
+Quote,anger,Who is man that is not angry?,Timon Of Athens,3,5
+Quote,anger,"Let grief / Convert to anger; blunt not the heart, enrage it.",Macbeth,4,3
+Quote,anger,"O, that my tongue were in the thunder's mouth! / Then with a passion would I shake the world.",King John,3,4
+Quote,anger,Come not within the measure of my wrath.,Two Gentlemen Of Verona,5,4
+Quote,anger,There is no following her in this fierce vein.,A Midsummer Night'S Dream,3,2
+Quote,Life,"To be, or not to be, that is the question.",Hamlet,3,1
+Quote,Life,"All the world's a stage, / And all the men and women merely players.",As You Like It,2,7
+Quote,Life,"Out, out brief candle! / Life's but a walking shadow, a poor player, / That struts and frets his hour upon the stage.",Macbeth,5,5
+Quote,Life,We are such stuff / As dreams are made on; and our little life / Is rounded with a sleep.,The Tempest,4,1
+Quote,Life,"Be not afraid of greatness. Some are born great, some achieve greatness, and some have greatness thrust upon 'em.",Twelfth Night,2,5
+Quote,Life,When we are born we cry that we are come / To this great stage of fools,King Lear,4,6
+Quote,Life,"The web of our life is of a mingled yarn, good and ill together.",All'S Well That Ends Well,2,2
+Quote,Life,"You cannot, sir, take from me anything that I will not more willingly part withal - except my life, except my life, except my life.",Hamlet,2,2
+Quote,Life,The time of life is short! / To spend that shortness basely were too long.,Henry IV Part I,5,2
+Quote,Life,I love long life better than figs.,Antony And Cleopatra,1,2
