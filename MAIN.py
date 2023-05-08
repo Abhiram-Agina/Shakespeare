@@ -24,7 +24,7 @@ cols[2].markdown("[Sonnet Clouds](https://abhiram-agina-shakespeare-wordcloud-vb
 
 cols[0].image('images/row_2_col_0.png', caption='Infinite MonkRandom', use_column_width=True)
 cols[1].image('images/row_2_col_1.png', caption='Random Insults & Quotes', use_column_width=True)
-cols[1].markdown("[Basic Insult Generator](https://abhiram-agina-shakespeare-insultgeneratorbasic-9povu7.streamlit.app/)")
+cols[1].markdown("[Random Insults & Quotes](https://abhiram-agina-shakespeare-insultgeneratorbasic-9povu7.streamlit.app/)")
 cols[2].image('images/row_2_col_2.png', caption='Text Summary', use_column_width=True)
 cols[2].markdown("[Text Summary](https://tulasi-agina-searchshakespeareplays-main-fpxl6w.streamlit.app/)")
 
