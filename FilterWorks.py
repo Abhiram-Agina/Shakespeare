@@ -9,7 +9,7 @@ def load_data():
   return df
 
 file = "Shakespeare_data.csv"
-df = load_data()
+df = load_data(width=None)
 
 #informs Streamlit on what values to allow as input
 create_data = {"Dataline": "number",
