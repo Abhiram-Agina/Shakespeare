@@ -12,7 +12,7 @@ file = "Shakespeare_data.csv"
 df = load_data()
 
 #informs Streamlit on what values to allow as input
-create_data = {"Dataline":"number"}
+create_data = {"Dataline":"number",
                 "Play": "multiselect",
                "PlayerLineNumber": "number",
                "ActSceneLine": "multiselect",
