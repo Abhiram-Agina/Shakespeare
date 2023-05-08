@@ -10,6 +10,7 @@ st.subheader("Shakespeare - Natural Language Processing")
 cols = st.columns(3)
 
 cols[0].image('images/row_0_col_0.png', caption='Search Plays', use_column_width=True)
+cols[2].markdown("[Search Shakespeare](https://abhiram-agina-shakespeare-filterworks-uzv0jn.streamlit.app/)")
 cols[1].image('images/row_0_col_1.png', caption='Statistical Analysis', use_column_width=True)
 cols[2].image('images/row_0_col_2.png', caption='Sentiment Analysis', use_column_width=True)
 
