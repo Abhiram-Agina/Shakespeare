@@ -1,6 +1,6 @@
 # Infinite Monkey Theorem
 
-# Romeo and Juliet TEXT: https://github.com/cgovella/learning/blob/master/edx-python/case%20studies/gutenverg/Books/English/shakespeare/Romeo%20and%20Juliet.txt
+# Shakespeare TEXT: https://storage.googleapis.com/download.tensorflow.org/data/shakespeare.txt
 # Inspiration: https://www.youtube.com/watch?v=3UWxIGk56C0&t=112s
 
 import streamlit as st
