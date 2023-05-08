@@ -22,6 +22,28 @@ text = text.decode(encoding='utf-8')
 # st.write('Total number of characters in the corpus is:', len(text)) # returns 1115394
 st.write('The first 100 characters of the corpus are as follows:\n', text[:100])
 
+st.write(''' SAMPLE OUTPUT by AI Playwright:
+ROMEO:
+Gentlement to fight: therefore you sure of your cups, good day, what news,
+is young not fearing of my life.
+
+TRANIO:
+Soft and welcomeou! for thy rudimband-man flatter'd,
+They'll be the ail, nor any other seas;
+Which now shepherdess away for jaur'ster.
+
+GREMIO:
+I being named,--
+In thousand, nielded, for all this light fight.
+
+CORIOLANUS:
+Why then had quarrel be my croy?
+
+KING RICHARD III:
+Marry, sir, 'tis intell'd at thy ruthless side:
+Since yond cousin, that I beg, for I could have stay'd at P
+''')
+
 # Vectorize Text: STEP 1
 
 # To give each unique character an index number, we first have to find all the unique characters in the text file. 
