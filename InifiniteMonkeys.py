@@ -51,6 +51,4 @@ for x in range(0, 100000): #monkey types 100000 random characters; increase rang
     currentRun = "" # if our currentRun is NOT anywhere in shakespeare, then discard the currentRun and start over
 
 # Once the above code run is complete, then print the bestMatches
-st.write("longest matching words", bestMatches, "characters typed: {}".format(characterTotal))
-#st.write("# words matched: ", len(bestMatches))
-#st.write(" words matched: ", bestMatches)
+st.write("longest matching words typed by the Monkeys", bestMatches, "characters typed: {}".format(characterTotal))
