@@ -36,11 +36,6 @@ if nav == "Players":
     numberPlayers
 
     plt.figure(figsize=(10,10))
-    ax = sns.barplot(x='Num Players',y='Play',data=numberPlayers)
+    fig, ax = sns.barplot(x='Num Players',y='Play',data=numberPlayers)
     ax.set(xlabel='Number of Players', ylabel='Play Name')
-    plt.show()
-    
-    arr = np.random.normal(1, 1, size=100)
-    fig, ax = plt.subplots()
-    ax.hist(arr, bins=20)
     st.pyplot(fig)
