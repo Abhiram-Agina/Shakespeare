@@ -18,7 +18,8 @@ st.title("Statistical Analysis of the Works of Shakespeare")
 add_selectbox = st.sidebar.selectbox(
     "Please select an analysis:",
     ("Chart1", "Chart2", "Chart3"))
-
-with Chart1:
+    
+nav = st.sidebar.radio("Navigation",["Summary", "Team Analysis", "Player Analysis", "Marketing/Sales Analysis", "Custom/Web Analysis"])
+if nav == "Summary":
     st.write("first 5 records:")
     st.write(data.head(5))
