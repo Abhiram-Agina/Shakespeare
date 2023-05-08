@@ -17,3 +17,5 @@ if st.button('Generate a Quote'):
   st.write("Play: ", df.iat[rand_num, 3])
   st.write("Act: ", str(df.iat[rand_num, 4]))
   st.write("Scene: ", str(df.iat[rand_num, 5]))
+
+st.video('https://www.youtu.be/HqwZLqLtxqk')
