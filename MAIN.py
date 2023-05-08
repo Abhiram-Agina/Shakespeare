@@ -10,9 +10,11 @@ st.subheader("Shakespeare - Natural Language Processing")
 cols = st.columns(3)
 
 cols[0].image('images/row_0_col_0.png', caption='Search Plays', use_column_width=True)
-cols[2].markdown("[Search Shakespeare](https://abhiram-agina-shakespeare-filterworks-uzv0jn.streamlit.app/)")
+cols[0].markdown("[Search Shakespeare](https://abhiram-agina-shakespeare-filterworks-uzv0jn.streamlit.app/)")
 cols[1].image('images/row_0_col_1.png', caption='Statistical Analysis', use_column_width=True)
-cols[2].image('images/row_0_col_2.png', caption='Sentiment Analysis', use_column_width=True)
+cols[1].markdown("[Statistical Analysis](https://abhiram-agina-shakespeare-filterworks-uzv0jn.streamlit.app/)")
+cols[2].image('images/row_0_col_2.png', caption='Sentiment Detection', use_column_width=True)
+cols[2].markdown("[Sentiment Detection](https://abhiram-agina-shakespeare-sentimentdetectionl-dt0usp.streamlit.app/)")
 
 cols[0].image('images/row_1_col_0.png', caption='AI Play Writer', use_column_width=True)
 cols[1].image('images/row_1_col_1.png', caption='Shakespeare', use_column_width=True)
