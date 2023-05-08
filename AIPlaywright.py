@@ -11,6 +11,11 @@ import os
 # load the dataset (i.e. shakespeare.txt) using the Keras API's util module in TensorFlow
 path_to_file = tf.keras.utils.get_file('shakespeare.txt', 'https://storage.googleapis.com/download.tensorflow.org/data/shakespeare.txt')
 
+st.write("This uses Recurrent Neural Network (with input & feedback to predict the output) to write like Shakespeare.")
+st.write("It has access to the Shakespeare Corpus. It analyzes patterns in character to generate Plays.")
+st.write("NOTE: this takes about 10 minutes to parse thru the Shakespeare Corpus 30 times.")
+
+
 # Read the file, then decode for py2 compat.
 text = open(path_to_file, 'rb').read() #the entire corpus is now accessible via the variable named 'text'
 text = text.decode(encoding='utf-8')
