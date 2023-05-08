@@ -13,5 +13,5 @@ import streamlit as st
 # Dataset Source: https://www.kaggle.com/datasets/kingburrito666/shakespeare-plays?select=Shakespeare_data.csv
 data = pd.read_csv('data/Shakespeare_data.csv', engine='python')
 
-st.write(data.info())
+st.write("first 5 records:")
 st.write(data.head(5))
