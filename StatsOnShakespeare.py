@@ -18,7 +18,7 @@ data['Player'].replace(np.nan, 'Other',inplace = True)
 
 st.title("Statistical Analysis of the Works of Shakespeare")
     
-nav = st.sidebar.radio("Stats",["Summary", "Chart2", "Chart3", "Chart4", "Chart5"])
+nav = st.sidebar.radio("Stats",["Summary", "Players", "Chart3", "Chart4", "Chart5"])
 if nav == "Summary":
     st.write("first 5 records:")
     st.write(data.head(5))
@@ -27,3 +27,15 @@ if nav == "Summary":
     st.write("Number of plays are: " + str(data['Play'].nunique()))
     # List of Plays
     st.write(pd.DataFrame(data['Play'].unique().tolist(), columns=['Play Name']))
+
+if nav == "Players":
+    numberPlayers = data.groupby(['Play'])['Player'].nunique().sort_values(ascending= False).to_frame()
+    numberPlayers['Play'] = numberPlayers.index.tolist()
+    numberPlayers.columns = ['Num Players','Play']
+    numberPlayers.index= np.arange(0,len(numberPlayers))
+    numberPlayers
+
+    plt.figure(figsize=(10,10))
+    ax = sns.barplot(x='Num Players',y='Play',data=numberPlayers)
+    ax.set(xlabel='Number of Players', ylabel='Play Name')
+    plt.show()
