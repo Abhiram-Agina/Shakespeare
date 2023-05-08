@@ -6,6 +6,8 @@ import pandas as pd
 file = "FILES/Shakespeare_Insults - quotes.csv"
 df = pd.read_csv(file)
 
+st.title('Quotes from Shakespears')
+
 if st.button('Generate a Quote'):
   rand_num = random.randint(1, (df.shape[0] - 1))
   
