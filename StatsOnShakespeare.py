@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 
 import streamlit as st
 
-# Dataset: https://www.kaggle.com/datasets/kingburrito666/shakespeare-plays?select=Shakespeare_data.csv
-
+# Dataset Source: https://www.kaggle.com/datasets/kingburrito666/shakespeare-plays?select=Shakespeare_data.csv
 data = pd.read_csv('data/Shakespeare_data.csv', engine='python')
+
+st.write(data.info())
