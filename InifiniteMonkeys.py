@@ -44,7 +44,7 @@ for x in range(0, 100000): #monkey types 100000 random characters; increase rang
     if len(currentRun) > len(bestMatches[0]): # if this is the longest match made so far, then reset the bestMatches to currentRun
       bestMatches = [currentRun]
       #st.write(bestMatches, "characters typed: {}".format(characterTotal))
-    elif len(currentRun) == len(bestMatches[0]): # if this is the same lenght as the longest match made so far, then append the currentRun to bestMatches
+    elif len(currentRun) == len(bestMatches[0]): # if this is the same length as the longest match made so far, then append the currentRun to bestMatches
       bestMatches.append(currentRun) 
       #st.write(bestMatches, "characters typed: {}".format(characterTotal))
   else:
@@ -52,5 +52,5 @@ for x in range(0, 100000): #monkey types 100000 random characters; increase rang
 
 # Once the above code run is complete, then print the bestMatches
 st.write(bestMatches, "characters typed: {}".format(characterTotal))
-st.write("# words matched: {}".len(bestMatches))
+st.write("# words matched: ", len(bestMatches))
 st.write(" words matched: ", bestMatches)
