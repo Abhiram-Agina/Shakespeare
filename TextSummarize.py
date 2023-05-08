@@ -48,7 +48,7 @@ def summarize(text, per): # NOTE: 'per' is the percentage (0 to 1) of sentences 
                 if word.text not in word_frequencies.keys(): # find word frequency
                     word_frequencies[word.text] = 1
                 else:
-                    wen_core_web_sm')ord_frequencies[word.text] += 1
+                    word_frequencies[word.text] += 1
     max_frequency=max(word_frequencies.values())
     for word in word_frequencies.keys():
         word_frequencies[word]=word_frequencies[word]/max_frequency
