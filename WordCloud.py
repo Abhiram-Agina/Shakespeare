@@ -12,6 +12,8 @@ st.title("Word Cloud of Shakespeare Sonnets")
 
 st.header("Sonnet Cloud")
 
+st.markdown("[Click here for Shakespeare Sonnets](https://nosweatshakespeare.com/sonnets/)")
+
 txt = st.text_area('Enter a Sonnet to analyze', '''
   Shall I compare thee to a summer’s day?
   Thou art more lovely and more temperate:
