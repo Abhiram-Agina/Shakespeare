@@ -11,7 +11,7 @@ This is my attempt at exploring Natural Language Processing using the Works of S
 ~ Abhiram Agina
 ''')
 
-st.write()
+st.divider()
 
 
 # to get different images in the rows and columns, have a systematic way to label your images. For mine, I have used row_{i}_col_{j}
