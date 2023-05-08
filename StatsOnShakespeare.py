@@ -36,6 +36,6 @@ if nav == "Players":
     numberPlayers
 
     plt.figure(figsize=(10,10))
-    fig, ax = sns.barplot(x='Num Players',y='Play',data=numberPlayers)
+    ax = sns.barplot(x='Num Players',y='Play',data=numberPlayers)
     ax.set(xlabel='Number of Players', ylabel='Play Name')
-    st.pyplot(fig)
+    st.pyplot()
