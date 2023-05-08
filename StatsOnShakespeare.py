@@ -15,3 +15,7 @@ data = pd.read_csv('data/Shakespeare_data.csv', engine='python')
 
 st.write("first 5 records:")
 st.write(data.head(5))
+
+add_selectbox = st.sidebar.selectbox(
+    "How would you like to be contacted?",
+    ("Email", "Home phone", "Mobile phone"))
