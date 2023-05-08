@@ -3,7 +3,7 @@ import pandas as pd
 from PIL import Image
 
 st.title('Bard vs Bot')
-st.header("**Shakespeare - Natural Language Processing**")
+st.subheader("Shakespeare - Natural Language Processing")
 
 shakespearePortraitPic = Image.open("IMAGES/ShakespearePortrait.jpeg")
 st.image(shakespearePortraitPic, width = 300)
