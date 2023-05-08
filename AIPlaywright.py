@@ -116,7 +116,7 @@ model = build_model(
     rnn_units=rnn_units, # 1024
     batch_size=BATCH_SIZE)  # 64 for the traning
 
-model.summary()
+# model.summary()
 
 # Train the Model
 # set our loss function and optimizer
@@ -155,7 +155,7 @@ tf.train.latest_checkpoint(checkpoint_dir)
 model = build_model(vocab_size, embedding_dim, rnn_units, batch_size=1)
 model.load_weights(tf.train.latest_checkpoint(checkpoint_dir))
 model.build(tf.TensorShape([1, None]))
-model.summary()
+# model.summary()
 
 # custom function to prepare our input for the model
 def generate_text(model, num_generate, temperature, start_string):
@@ -190,4 +190,4 @@ generated_text = generate_text(
                     num_generate=500, 
                     temperature=1, 
                     start_string=u"ROMEO") #Start String is "ROMEO" --> feel free to change it; QUESTION: can you change this to a part of the Sonnet to see how it completes the Sonnet
-print(generated_text)
+st.write(generated_text)
