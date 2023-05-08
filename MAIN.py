@@ -35,7 +35,7 @@ cols[2].image('images/row_1_col_2.png', caption='Sonnet Clouds', use_column_widt
 cols[2].markdown("[Sonnet Clouds](https://abhiram-agina-shakespeare-wordcloud-vbjvi0.streamlit.app/)")
 
 cols[0].image('images/row_2_col_0.png', caption='Infinite Monkeys Theorem', use_column_width=True)
-cols[0].markdown("[Infinite Monkeys Theorem](https://abhiram-agina-shakespeare-wordcloud-vbjvi0.streamlit.app/)")
+cols[0].markdown("[Infinite Monkeys Theorem](https://abhiram-agina-shakespeare-inifinitemonkeys-giytkq.streamlit.app/)")
 cols[1].image('images/row_2_col_1.png', caption='Random Insults & Quotes', use_column_width=True)
 cols[1].markdown("[Random Insults & Quotes](https://abhiram-agina-shakespeare-insultgeneratorbasic-9povu7.streamlit.app/)")
 cols[2].image('images/row_2_col_2.png', caption='Text Summary', use_column_width=True)
