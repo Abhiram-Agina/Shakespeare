@@ -28,7 +28,7 @@ cols[2].image('images/row_0_col_2.png', caption='Sentiment Detection', use_colum
 cols[2].markdown("[Sentiment Detection](https://abhiram-agina-shakespeare-sentimentdetectionl-dt0usp.streamlit.app/)")
 
 cols[0].image('images/row_1_col_0.png', caption='AI Playwright', use_column_width=True)
-cols[0].markdown("[AI Playwright](https://abhiram-agina-shakespeare-wordcloud-vbjvi0.streamlit.app/)")
+cols[0].markdown("[AI Playwright](https://abhiram-agina-shakespeare-aiplaywright-b2nxzh.streamlit.app/)")
 cols[1].image('images/row_1_col_1.png', caption='Shakespeare Quotes', use_column_width=True)
 cols[1].markdown("[Shakespeare Quotes](https://abhiram-agina-shakespeare-quotegeneratorbasic-ltfk2v.streamlit.app/)")
 cols[2].image('images/row_1_col_2.png', caption='Sonnet Clouds', use_column_width=True)
