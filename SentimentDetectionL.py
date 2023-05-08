@@ -13,17 +13,18 @@ st.markdown("[Click here for Shakespeare Sonnets](https://nosweatshakespeare.com
 
 sonnetInput = st.text_area("Paste Shakespearean Sonnet Here:") 
 
-blob = TextBlob(sonnetInput)
-st.write('sentiment of the sonnet is:', blob.sentiment)
+if st.button('Analyze Sentiment'):
+  blob = TextBlob(sonnetInput)
+  st.write('sentiment of the sonnet is:', blob.sentiment)
 
-if blob.sentiment.polarity < 0:
-  st.write("negative sentiment")
-else:
-  st.write("positive sentiment")
+  if blob.sentiment.polarity < 0:
+    st.write("negative sentiment")
+  else:
+    st.write("positive sentiment")
 
-if blob.sentiment.subjectivity < 0.5:
-  st.write("objective")
-else:
-  st.write("subjective")
+  if blob.sentiment.subjectivity < 0.5:
+    st.write("objective")
+  else:
+    st.write("subjective")
   
 #blob.words
