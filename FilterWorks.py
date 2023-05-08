@@ -9,11 +9,10 @@ def load_data():
   return df
 
 file = "Shakespeare_data.csv"
-df = load_data(width=None)
+df = load_data()
 
 #informs Streamlit on what values to allow as input
-create_data = {"Dataline": "number",
-               "Play": "multiselect",
+create_data = {"Play": "multiselect",
                "PlayerLineNumber": "number",
                "ActSceneLine": "multiselect",
                "Player": "multiselect",
