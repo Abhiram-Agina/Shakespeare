@@ -8,3 +8,4 @@ spacy
 spacy-streamlit
 tensorflow
 newsaper
+protobuf!=4.21.0
