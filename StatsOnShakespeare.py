@@ -20,7 +20,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 st.title("Statistical Analysis of the Works of Shakespeare")
     
-nav = st.sidebar.radio("Stats",["Summary", "Players", "Chart3", "Chart4", "Chart5"])
+nav = st.sidebar.radio("Stats",["Summary", "Players", "Lines", "Chart4", "Chart5"])
 if nav == "Summary":
     st.write("first 5 records:")
     st.write(data.head(5))
@@ -52,4 +52,10 @@ if nav == "Lines": # Lines per Play
     plt.figure(figsize=(10,10))
     ax = sns.barplot(x='Num Lines',y='Play',data=numberLines)
     ax.set(xlabel='Number of Lines', ylabel='Play Name')
+    st.pyplot()
+
+if nav == "Lines": # Average Lines per Player per Play
+    lt.rcParams['figure.figsize']=(12.5,5)
+    ax= sns.barplot(x='Play',y='PlayerLinenumber',data=data)
+    plt.setp(ax.get_xticklabels(), rotation=90)
     st.pyplot()
