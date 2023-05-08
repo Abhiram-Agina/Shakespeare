@@ -42,18 +42,6 @@ if nav == "Players": # Players per Play
     ax.set(xlabel='Number of Players', ylabel='Play Name')
     st.pyplot()
 
-if nav == "Lines": # Lines per Play
-    numberLines = data.groupby(['Play'])['PlayerLine'].nunique().sort_values(ascending= False).to_frame()
-    numberLines['Play'] = numberLines.index.tolist()
-    numberLines.columns = ['Num Lines','Play']
-    numberLines.index= np.arange(0,len(numberLines))
-    numberLines
-
-    plt.figure(figsize=(10,10))
-    ax = sns.barplot(x='Num Lines',y='Play',data=numberLines)
-    ax.set(xlabel='Number of Lines', ylabel='Play Name')
-    st.pyplot()
-
 if nav == "Lines": # Average Lines per Player per Play
     lt.rcParams['figure.figsize']=(12.5,5)
     ax= sns.barplot(x='Play',y='PlayerLinenumber',data=data)
