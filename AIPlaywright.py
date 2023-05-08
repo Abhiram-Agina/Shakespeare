@@ -34,3 +34,4 @@ words = re.findall('\w+', text.lower())
 uniq_words = sorted(set(words)) #set() finds unique words; sorted() converts the set into a sorted array
 len(uniq_words) #11,456 unique words
 st.write(uniq_words[:10]) # returns first 10 words from the 11,456 unique words
+
