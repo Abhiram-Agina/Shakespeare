@@ -66,4 +66,4 @@ def summarize(text, per): # NOTE: 'per' is the percentage (0 to 1) of sentences 
     summary=''.join(final_summary)
     return summary
   
- summarize(article.text, 0.05) #summarize to 0.05 i.e 5% of the original text
+summarize(article.text, 0.05) #summarize to 0.05 i.e 5% of the original text
