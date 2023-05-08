@@ -6,6 +6,7 @@ import streamlit_pandas as sp
 @st.cache_data
 def load_data():
   df = pd.read_csv(file)
+  df = df.drop(['Dateline'], axis=1)
   return df
 
 file = "Shakespeare_data.csv"
@@ -18,7 +19,7 @@ create_data = {"Play": "multiselect",
                "Player": "multiselect",
                "PlayerLine": "text"}
 
-all_widgets = sp.create_widgets(df, create_data, ignore_columns = ["Dataline"])
+all_widgets = sp.create_widgets(df, create_data)
 res = sp.filter_df(df, all_widgets)
 
 st.title("Search Shakespeare")
