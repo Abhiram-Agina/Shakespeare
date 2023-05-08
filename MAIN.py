@@ -5,6 +5,11 @@ from PIL import Image
 st.title('Bard vs Bot')
 st.write(":red[Shakespeare - Natural Language Processing]")
 
+st.write('''
+I am interested in Data Science, particularly sports analytics and natural language processing. 
+Here’s my attempt to explore Natural Language Processing using the Works of Shakespeare
+''')
+
 
 # to get different images in the rows and columns, have a systematic way to label your images. For mine, I have used row_{i}_col_{j}
 
