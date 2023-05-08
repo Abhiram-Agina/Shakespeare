@@ -37,8 +37,7 @@ Extract a percentage of the highest ranked sentences. These serve as our summary
 '''
 
 def summarize(text, per): # NOTE: 'per' is the percentage (0 to 1) of sentences you want to extract
-    #nlp = spacy.load('en_core_web_sm') # 'en_core_web_sm' is the NLP dictionary for English (or the trained pipeline for English: https://spacy.io/models/en)
-    nlp = spacy.download('en_core_web_sm')
+    nlp = spacy.load('en_core_web_sm') # 'en_core_web_sm' is the NLP dictionary for English (or the trained pipeline for English: https://spacy.io/models/en)
     doc= nlp(text)
     tokens=[token.text for token in doc] #tokenize the text
     word_frequencies={}
