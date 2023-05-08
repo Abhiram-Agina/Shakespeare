@@ -7,5 +7,5 @@ streamlit_pandas
 spacy
 spacy-streamlit
 tensorflow
-newsaper
+newspaper3k
 protobuf>=3.20.3
