@@ -16,6 +16,8 @@ data = pd.read_csv('data/Shakespeare_data.csv', engine='python')
 # replace 'NaN' with 'Other' in the Player column
 data['Player'].replace(np.nan, 'Other',inplace = True)
 
+st.set_option('deprecation.showPyplotGlobalUse', False)
+
 st.title("Statistical Analysis of the Works of Shakespeare")
     
 nav = st.sidebar.radio("Stats",["Summary", "Players", "Chart3", "Chart4", "Chart5"])
