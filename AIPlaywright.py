@@ -68,21 +68,21 @@ def split_input_target(chunk):
   return input_text, target_text
 
 dataset = sequences.map(split_input_target)
-dataset # returns <_MapDataset element_spec=(TensorSpec(shape=(100,), dtype=tf.int64, name=None), TensorSpec(shape=(100,), dtype=tf.int64, name=None))>
+# dataset # returns <_MapDataset element_spec=(TensorSpec(shape=(100,), dtype=tf.int64, name=None), TensorSpec(shape=(100,), dtype=tf.int64, name=None))>
 
 # suffle the dataset and split it into 64 sentence batches
 
 BUFFER_SIZE = 10000 # TF shuffles the data only within buffers
 BATCH_SIZE = 64 # Batch size of 64 sentences each --> model accepts 64 input sentences at a time.
 dataset = dataset.shuffle(BUFFER_SIZE).batch(BATCH_SIZE, drop_remainder=True)
-print(dataset) # returns <_BatchDataset element_spec=(TensorSpec(shape=(64, 100), dtype=tf.int64, name=None), TensorSpec(shape=(64, 100), dtype=tf.int64, name=None))>
+#st.write(dataset) # returns <_BatchDataset element_spec=(TensorSpec(shape=(64, 100), dtype=tf.int64, name=None), TensorSpec(shape=(64, 100), dtype=tf.int64, name=None))>
 
 # Build the Model
 # set parameters for the Model
 
 # Length of the vocabulary in chars
 vocab_size = len(vocab)
-vocab_size # 64 unique characters
+# vocab_size # 64 unique characters
 
 # The embedding dimension
 embedding_dim = 256
