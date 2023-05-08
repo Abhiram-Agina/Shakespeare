@@ -7,7 +7,7 @@ st.write(":red[Shakespeare - Natural Language Processing]")
 
 st.write('''
 I am interested in Data Science, particularly sports analytics and natural language processing. 
-Here’s my attempt to explore Natural Language Processing using the Works of Shakespeare
+This is my attempt at exploring Natural Language Processing using the Works of Shakespeare.
 ''')
 
 
