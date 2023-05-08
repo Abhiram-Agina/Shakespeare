@@ -17,8 +17,8 @@ st.title("Statistical Analysis of the Works of Shakespeare")
 
 add_selectbox = st.sidebar.selectbox(
     "Please select an analysis:",
-    ("First 5", "Home phone", "Mobile phone"))
+    ("Chart1", "Chart2", "Chart3"))
 
-with 'First 5':
+with 'Chart1':
     st.write("first 5 records:")
     st.write(data.head(5))
