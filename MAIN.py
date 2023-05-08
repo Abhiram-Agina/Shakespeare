@@ -3,7 +3,8 @@ import pandas as pd
 from PIL import Image
 
 st.title('Bard vs Bot')
-st.write("Shakespeare - Natural Language Processing")
+st.write(":red[Shakespeare - Natural Language Processing]")
+
 
 # to get different images in the rows and columns, have a systematic way to label your images. For mine, I have used row_{i}_col_{j}
 
