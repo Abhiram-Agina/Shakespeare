@@ -14,12 +14,8 @@ import streamlit as st
 data = pd.read_csv('data/Shakespeare_data.csv', engine='python')
 
 st.title("Statistical Analysis of the Works of Shakespeare")
-
-add_selectbox = st.sidebar.selectbox(
-    "Please select an analysis:",
-    ("Chart1", "Chart2", "Chart3"))
     
-nav = st.sidebar.radio("Navigation",["Summary", "Team Analysis", "Player Analysis", "Marketing/Sales Analysis", "Custom/Web Analysis"])
-if nav == "Summary":
+nav = st.sidebar.radio("Stats",["First 5 Rows", "Chart2", "Chart3", "Chart4", "Chart5"])
+if nav == "First 5 Rows":
     st.write("first 5 records:")
     st.write(data.head(5))
