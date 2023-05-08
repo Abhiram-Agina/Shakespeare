@@ -52,5 +52,5 @@ for x in range(0, 100000): #monkey types 100000 random characters; increase rang
 
 # Once the above code run is complete, then print the bestMatches
 st.write(bestMatches, "characters typed: {}".format(characterTotal))
-st.write("# words matched: ", len(bestMatches))
-st.write(" words matched: ", bestMatches)
+#st.write("# words matched: ", len(bestMatches))
+#st.write(" words matched: ", bestMatches)
