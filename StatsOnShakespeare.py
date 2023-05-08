@@ -19,6 +19,6 @@ add_selectbox = st.sidebar.selectbox(
     "Please select an analysis:",
     ("Chart1", "Chart2", "Chart3"))
 
-with 'Chart1':
+with Chart1:
     st.write("first 5 records:")
     st.write(data.head(5))
