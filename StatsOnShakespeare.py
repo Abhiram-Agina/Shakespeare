@@ -18,7 +18,12 @@ data['Player'].replace(np.nan, 'Other',inplace = True)
 
 st.title("Statistical Analysis of the Works of Shakespeare")
     
-nav = st.sidebar.radio("Stats",["First 5 Rows", "Chart2", "Chart3", "Chart4", "Chart5"])
-if nav == "First 5 Rows":
+nav = st.sidebar.radio("Stats",["Summary", "Chart2", "Chart3", "Chart4", "Chart5"])
+if nav == "Summary":
     st.write("first 5 records:")
     st.write(data.head(5))
+    
+    # Total number of Plays
+    st.write("Number of plays are: " + str(data['Play'].nunique()))
+    # List of Plays
+    st.write(pd.DataFrame(data['Play'].unique().tolist(), columns=['Play Name']))
