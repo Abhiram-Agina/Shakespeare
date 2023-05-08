@@ -19,7 +19,7 @@ st.write("---")
 # list of all characters in the book
 typewriter = ["a","b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", ",", "!", "&", "?", "[", "]", " "]
 
-# bestMatches stores the longest string of characters the monkey types that match Romeo & Juliet
+# bestMatches stores the longest string of characters the monkey types that match shakepseare
 bestMatches = [""]
 
 # stores current string being typed by the monkey
@@ -39,7 +39,7 @@ for x in range(0, 100000): #monkey types 100000 random characters; increase rang
   totalRun += newChar
   characterTotal += 1
 
-  if currentRun in romeo: # if our currentRun IS somewhere in romeo
+  if currentRun in shakespeare: # if our currentRun IS somewhere in shakespeare
     if len(currentRun) > len(bestMatches[0]): # if this is the longest match made so far, then reset the bestMatches to currentRun
       bestMatches = [currentRun]
       #st.write(bestMatches, "characters typed: {}".format(characterTotal))
@@ -47,7 +47,7 @@ for x in range(0, 100000): #monkey types 100000 random characters; increase rang
       bestMatches.append(currentRun) 
       #st.write(bestMatches, "characters typed: {}".format(characterTotal))
   else:
-    currentRun = "" # if our currentRun is NOT anywhere in romeo, then discard the currentRun and start over
+    currentRun = "" # if our currentRun is NOT anywhere in shakespeare, then discard the currentRun and start over
 
 # Once the above code run is complete, then print the bestMatches
-st.write(bestMatches, "characters typed: {}".format(characterTotal)) 
+st.write(bestMatches, "characters typed: {}".format(characterTotal))
