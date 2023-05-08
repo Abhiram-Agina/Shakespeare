@@ -11,7 +11,7 @@ st.title("Library-Based Sentiment Detection")
 
 st.markdown("[Click here for Shakespeare Sonnets](https://nosweatshakespeare.com/sonnets/)")
 
-sonnetInput = st.text_area("Paste Shakespearean Sonnet Here:") 
+sonnetInput = st.text_area("Paste a Shakespearean Sonnet or PlayerLine here to analyze the sentiment:") 
 
 if st.button('Analyze Sentiment'):
   blob = TextBlob(sonnetInput)
