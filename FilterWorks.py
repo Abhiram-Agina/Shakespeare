@@ -6,14 +6,14 @@ import streamlit_pandas as sp
 @st.cache_data
 def load_data():
   df = pd.read_csv(file)
+  df = pd.drop(['Dataline'])
   return df
 
 file = "Shakespeare_data.csv"
 df = load_data()
 
 #informs Streamlit on what values to allow as input
-create_data = {"Dataline": "number",
-                "Play": "multiselect",
+create_data = {"Play": "multiselect",
                "PlayerLineNumber": "number",
                "ActSceneLine": "multiselect",
                "Player": "multiselect",
