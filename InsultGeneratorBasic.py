@@ -7,8 +7,8 @@ df = pd.read_csv(file)
 
 col1, col2 = st.columns(2)
 with col1:
-  st.write("Bard's Insults")
-  if st.button('Generate an Insult'):
+  st.subheader("Bard's Insults")
+  if st.button('Insults from Shakespeare's Plays'):
     rand_num = random.randint(1, (df.shape[0] - 1))
 
     st.write("Topic: ", str(df.iat[rand_num, 1]).upper())
@@ -27,7 +27,7 @@ with col2:
   insultNouns = "FILES/nounList.txt"
   nouns = pd.read_csv(insultNouns, sep = ' ')
 
-  if st.button('Generate a Wacky Shakespearean Insult'):
+  if st.button('Generate a Wacky Shakespeare-style Insult'):
     rand_num1 = random.randint(1, (adverbs.shape[0] - 1))
     rand_num2 = random.randint(1, (adjectives.shape[0] - 1))
     rand_num3 = random.randint(1, (nouns.shape[0] - 1))
