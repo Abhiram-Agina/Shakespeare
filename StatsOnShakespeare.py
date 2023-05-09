@@ -43,7 +43,7 @@ if nav == "Players": # Players per Play
     st.pyplot()
 
 if nav == "Lines": # Average Lines per Player per Play
-    lt.rcParams['figure.figsize']=(12.5,5)
+    plt.rcParams['figure.figsize']=(12.5,5)
     ax= sns.barplot(x='Play',y='PlayerLinenumber',data=data)
     plt.setp(ax.get_xticklabels(), rotation=90)
     st.pyplot()
