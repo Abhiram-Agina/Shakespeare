@@ -28,3 +28,6 @@ st.write(df)
 
 st.header("Result Dataframe") #Prints filtered dataframe
 st.write(res)
+
+st.write('---')
+st.video('https://www.youtu.be/QTu39aMg_mU') # Why you should read Hamlet?
