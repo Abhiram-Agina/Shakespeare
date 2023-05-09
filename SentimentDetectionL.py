@@ -45,7 +45,7 @@ Is sicklied o'er with the pale cast of thought,
 And enterprises of great pith and moment
 With this regard their currents turn awry
 And lose the name of action.''',
-height=500) 
+height=600) 
 
 if st.button('Analyze Sentiment'):
   blob = TextBlob(sonnetInput)
