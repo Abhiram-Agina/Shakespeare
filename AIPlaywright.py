@@ -11,6 +11,9 @@ import os
 # load the dataset (i.e. shakespeare.txt) using the Keras API's util module in TensorFlow
 path_to_file = tf.keras.utils.get_file('shakespeare.txt', 'https://storage.googleapis.com/download.tensorflow.org/data/shakespeare.txt')
 
+st.write('---')
+st.video('https://www.youtu.be/K-aAUwAFZlQ') # Did Shakespeare write his Plays?
+
 st.write("This uses Recurrent Neural Network (with input & feedback to predict the output) to write like Shakespeare.")
 st.write("It has access to the Shakespeare Corpus. It analyzes patterns in character to generate Plays.")
 st.write("NOTE: this takes about 10 minutes to parse thru the Shakespeare Corpus 30 times.")
@@ -218,6 +221,3 @@ generated_text = generate_text(
                     temperature=1, 
                     start_string=u"ROMEO") #Start String is "ROMEO" --> feel free to change it; QUESTION: can you change this to a part of the Sonnet to see how it completes the Sonnet
 st.write(generated_text)
-
-st.write('---')
-st.video('https://www.youtu.be/K-aAUwAFZlQ') # Did Shakespeare write his Plays?
