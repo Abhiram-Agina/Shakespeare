@@ -63,5 +63,5 @@ if nav == "Play": # Lines per Player in a given Play
 
     plt.figure(figsize=(10,10))
     ax = sns.barplot(x='Lines',y='Player',data=p_line)
-    ax.set(title='play', xlabel='Number of Players', ylabel='Play Name')
+    ax.set(title=play, xlabel='Number of Lines', ylabel='Player')
     st.pyplot()
