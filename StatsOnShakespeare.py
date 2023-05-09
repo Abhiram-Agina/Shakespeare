@@ -36,7 +36,7 @@ if nav == "Players": # Players per Play
     numberPlayers['Play'] = numberPlayers.index.tolist()
     numberPlayers.columns = ['Num Players','Play']
     numberPlayers.index= np.arange(0,len(numberPlayers))
-    numberPlayers
+    #numberPlayers
 
     plt.figure(figsize=(10,10))
     ax = sns.barplot(x='Num Players',y='Play',data=numberPlayers)
