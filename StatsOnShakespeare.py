@@ -51,12 +51,6 @@ if nav == "Lines": # PlayerLines per Play
     st.pyplot()
 
 if nav == "Play": # Lines per Player in a given Play
-    st.write("Lines per Player in a given Play")
-    plt.rcParams['figure.figsize']=(12.5,5)
-    ax= sns.barplot(x='Play',y='PlayerLinenumber',data=data)
-    plt.setp(ax.get_xticklabels(), rotation=90)
-    st.pyplot()
-    
     # Lines per Player in a given Play
     # Players who dominate the stage (based on #lines spoken)
 
@@ -69,5 +63,5 @@ if nav == "Play": # Lines per Player in a given Play
 
     plt.figure(figsize=(10,10))
     ax = sns.barplot(x='Lines',y='Player',data=p_line)
-    ax.set(xlabel='Number of Players', ylabel='Play Name')
+    ax.set(title='play', xlabel='Number of Players', ylabel='Play Name')
     st.pyplot()
