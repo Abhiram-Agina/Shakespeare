@@ -34,11 +34,8 @@ st.video('https://www.youtu.be/QTu39aMg_mU') # Why you should read Hamlet?
 
 
 st.write("""
-  *Project Description:*
-  
-  This program aims to serve students in their search for accurate quotations based on Play, Player, and Act/Scene/Line. 
-  
-  I created this program by organizing which inputs a user might provide and filtering the data as necessary.
-  
+  **Project Description:**\n
+  This program aims to serve students in their search for accurate quotations based on Play, Player, and Act/Scene/Line.\n  
+  I created this program by organizing which inputs a user might provide and filtering the data as necessary.\n
   Data Source - Kaggle
 """)
