@@ -14,6 +14,7 @@ st.title("Word Cloud of Shakespeare Sonnets")
 st.header("Sonnet Cloud")
 
 st.markdown("[Click here for Shakespeare Sonnets](https://nosweatshakespeare.com/sonnets/)")
+st.markdown("[Or have Captain Kirk read them to you](https://www.youtube.com/hashtag/asonnetaday)")
 
 txt = st.text_area('Enter a Sonnet to analyze:', '''
   Shall I compare thee to a summer’s day?
