@@ -65,4 +65,8 @@ if st.button('Analyze Sentiment'):
 st.write('---')
 st.video('https://www.youtu.be/ZNMwhaSHK9Q') # Shakesearean Dating Tips
 
-st.write("hi")
+st.write("""
+  **Project Description:**\n
+  This program identifies the underlying emotion in a passage.\n  
+  The program works by breaking apart (tokenizing) the text and evaluating deeper meaning through matching words to their synonyms.\n
+""")
