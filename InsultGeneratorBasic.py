@@ -35,3 +35,10 @@ with col2:
     
 st.write('---')
 st.video('https://www.youtu.be/vdCjKH5IKJ8')
+
+st.write("""
+  **Project Description:**\n
+  This program displays the iconic insults which are central to appreciating Shakespeare's works\n  
+  The first part of this program works by randomly selecting a quote and its information to display.\n
+  The second part of this program works by randomly selecting an adverb, adjective, and noun to piece together and form your next scalding dig!\n
+""")
