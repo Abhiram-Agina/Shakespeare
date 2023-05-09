@@ -9,7 +9,7 @@ nltk.download('averaged_perceptron_tagger')
 
 st.title("Library-Based Sentiment Detection")
 
-st.markdown("[Click here for Shakespeare Sonnets](https://nosweatshakespeare.com/sonnets/)")
+st.markdown("[Click here for Shakespeare Speeches](https://nosweatshakespeare.com/quotes/monologues/)")
 
 sonnetInput = st.text_area("Paste a Shakespearean Sonnet or Speech here to analyze the sentiment:", '''
 To be, or not to be, that is the question:
