@@ -11,6 +11,8 @@ import os
 # load the dataset (i.e. shakespeare.txt) using the Keras API's util module in TensorFlow
 path_to_file = tf.keras.utils.get_file('shakespeare.txt', 'https://storage.googleapis.com/download.tensorflow.org/data/shakespeare.txt')
 
+st.subheader("AI Playwright")
+
 st.write('---')
 st.video('https://www.youtu.be/K-aAUwAFZlQ') # Did Shakespeare write his Plays?
 
