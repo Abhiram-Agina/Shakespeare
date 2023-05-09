@@ -14,7 +14,7 @@ path_to_file = tf.keras.utils.get_file('shakespeare.txt', 'https://storage.googl
 shakespeare = open(path_to_file, 'rb').read() #the entire corpus is now accessible via the variable named 'text'
 shakespeare = shakespeare.decode(encoding='utf-8')
 st.write("Testing if randomly typing characters results in one of Shakespeare's Works, or at least one of his words")
-st.write('Total number of characters in the corpus is:', len(shakespeare)) # returns 178981 total characters
+st.write("Comparing Monkey's Typing to Shakespeare's Corpus of # Characters:", len(shakespeare)) # returns 178981 total characters
 # st.write('The first 500 characters of the corpus are as follows: \n', shakespeare[:500])
 
 st.write("---")
