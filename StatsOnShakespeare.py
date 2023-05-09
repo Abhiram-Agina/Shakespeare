@@ -20,7 +20,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 st.subheader("Statistical Analysis of the Works of Shakespeare")
     
-nav = st.sidebar.radio("Stats",["Summary", "Players", "Lines", "Play", "Chart5"])
+nav = st.sidebar.radio("Stats",["Summary", "Players", "Lines", "Play", "Emotion"])
 if nav == "Summary":
     st.write("first 5 records:")
     st.write(data.head(5))
@@ -58,6 +58,25 @@ if nav == "Play": # Lines per Player in a given Play
     
     # play = "Alls well that ends well" # NOTE: Change this Play name to get the #Lines per Player for that Play
     p_line = data[data['Play']==play].groupby('Player').count().sort_values(by='PlayerLine',ascending=False)['PlayerLine']
+    p_line = p_line.to_frame()
+    p_line['Player'] = p_line.index.tolist()
+    p_line.index = np.arange(0,len(p_line))
+    p_line.columns=['Lines','Player']
+
+    plt.figure(figsize=(10,10))
+    ax = sns.barplot(x='Lines',y='Player',data=p_line)
+    ax.set(title=play, xlabel='Number of Lines', ylabel='Player')
+    st.pyplot()
+
+if nav == "Emotion": # Lines per Player in a given Play
+    # Lines per Player in a given Play
+    # Players who dominate the stage (based on #lines spoken)
+    
+    play = st.selectbox('Please select a play', data['Play'].unique())
+    
+    # play = "Alls well that ends well" # NOTE: Change this Play name to get the #Lines per Player for that Play
+    # p_line = data[data['Play']==play].groupby('Player').count().sort_values(by='PlayerLine',ascending=False)['PlayerLine']
+    p_line = data[data['Play']==play].groupby('Player').data.PlayerLine.str.count('love')
     p_line = p_line.to_frame()
     p_line['Player'] = p_line.index.tolist()
     p_line.index = np.arange(0,len(p_line))
