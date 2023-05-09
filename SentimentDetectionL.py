@@ -28,3 +28,5 @@ if st.button('Analyze Sentiment'):
     st.write("subjective")
   
 #blob.words
+st.write('---')
+st.video('https://www.youtu.be/ZNMwhaSHK9Q') # Shakesearean Dating Tips
