@@ -6,7 +6,7 @@ import pandas as pd
 file = "FILES/Shakespeare_Insults - insults.csv"
 df = pd.read_csv(file)
 
-col1, col2 = st.columns(3)
+col1, col2 = st.columns(2)
 with col1:
   if st.button('Generate an Insult'):
     rand_num = random.randint(1, (df.shape[0] - 1))
