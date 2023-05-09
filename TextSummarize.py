@@ -2,7 +2,7 @@
 # Inspiration: Reference: https://www.activestate.com/blog/how-to-do-text-summarization-with-python/
 
 import streamlit as st
-
+import nltk
 '''
 EXTRACTIVE SUMMARIZATION (as opposed to ABSTRACTIVE SUMMARIZATOIN): 
 Rather than understanding the text, extractive summarization relies on quantitative metrics constructed from the text itself, 
