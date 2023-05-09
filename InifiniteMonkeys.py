@@ -8,6 +8,7 @@ import tensorflow as tf
 import numpy as np
 import os
 
+st.subheader('Testing the Infinite Monkey Theorem')
 # read the shakespeare works
 path_to_file = tf.keras.utils.get_file('shakespeare.txt', 'https://storage.googleapis.com/download.tensorflow.org/data/shakespeare.txt')
 shakespeare = open(path_to_file, 'rb').read() #the entire corpus is now accessible via the variable named 'text'
@@ -34,7 +35,7 @@ characterTotal = 0
 
 import random
 
-for x in range(0, 100000): #monkey types 100000 random characters; increase range as needed;
+for x in range(0, 10000): #monkey types 10000 random characters; increase range as needed;
   newChar = random.choice(typewriter)
   currentRun += newChar
   totalRun += newChar
@@ -52,3 +53,6 @@ for x in range(0, 100000): #monkey types 100000 random characters; increase rang
 
 # Once the above code run is complete, then print the bestMatches
 st.write("longest matching words typed by the Monkeys", bestMatches, "characters typed: {}".format(characterTotal))
+
+st.write('---')
+st.video('https://www.youtu.be/RvHMOwi-ks4') # Infinite Monkey Theorem
