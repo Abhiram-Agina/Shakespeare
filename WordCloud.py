@@ -31,7 +31,7 @@ txt = st.text_area('Enter a Sonnet to analyze:', '''
   When in eternal lines to time thou growest:
   So long as men can breathe or eyes can see,
   So long lives this and this gives life to thee.
-  ''', height=300)
+  ''', height=400)
 # st.write('you typed:', txt)
 
 blob = TextBlob(txt)
