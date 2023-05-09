@@ -18,7 +18,7 @@ data['Player'].replace(np.nan, 'Other',inplace = True)
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
-st.title("Statistical Analysis of the Works of Shakespeare")
+st.subheader("Statistical Analysis of the Works of Shakespeare")
     
 nav = st.sidebar.radio("Stats",["Summary", "Players", "Lines", "Chart4", "Chart5"])
 if nav == "Summary":
