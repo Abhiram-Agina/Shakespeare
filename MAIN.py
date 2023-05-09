@@ -36,15 +36,3 @@ cols[1].image('images/row_2_col_1.png', caption='Insults: 400-year-old & Fresh',
 cols[1].markdown("[Insults: 400-year-old & Fresh](https://abhiram-agina-shakespeare-insultgeneratorbasic-9povu7.streamlit.app/)")
 cols[2].image('images/row_2_col_2.png', caption='Text Summary', use_column_width=True)
 cols[2].markdown("[Text Summary](https://abhiram-agina-shakespeare-insultgeneratorbasic-9povu7.streamlit.app/)")
-
-st.header("*Apps*")
-st.markdown(
-'''
-* [Word Cloud Generator](https://abhiram-agina-shakespeare-wordcloud-vbjvi0.streamlit.app/)
-* [Filtering Shakespeare](https://abhiram-agina-shakespeare-filterworks-uzv0jn.streamlit.app/)
-* [Sentiment Detection](https://abhiram-agina-shakespeare-sentimentdetectionl-dt0usp.streamlit.app/)
-* [Basic Insult Generator](https://abhiram-agina-shakespeare-insultgeneratorbasic-9povu7.streamlit.app/)
-* [Basic Quote Generator](https://abhiram-agina-shakespeare-quotegeneratorbasic-ltfk2v.streamlit.app/)
-* [Wacky Insult Generator](https://abhiram-agina-shakespeare-randomizedinsults-hfug85.streamlit.app/)
-'''
-)
