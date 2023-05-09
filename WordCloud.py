@@ -56,3 +56,6 @@ plt.show()
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.pyplot()
+
+st.write('---')
+st.video('https://www.youtu.be/fMrcJFeRoi4') # Sonnets read by Captain Kirk
