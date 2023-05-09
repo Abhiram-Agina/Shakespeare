@@ -11,10 +11,10 @@ with col1:
   if st.button("Insults from Shakespeare's Plays"):
     rand_num = random.randint(1, (df.shape[0] - 1))
 
-    st.write("Topic: ", str(df.iat[rand_num, 1]).upper())
     st.write("Line: ", df.iat[rand_num, 2])
     st.write("Act: ", df.iat[rand_num, 3])
     st.write("Scene: ", str(df.iat[rand_num, 4]))
+    st.write("Topic: ", str(df.iat[rand_num, 1]).proper())
 
 with col2:
   st.subheader("Bot's Insults")
