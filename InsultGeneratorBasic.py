@@ -14,7 +14,7 @@ with col1:
     st.write("Line: ", df.iat[rand_num, 2])
     st.write("Act: ", df.iat[rand_num, 3])
     st.write("Scene: ", str(df.iat[rand_num, 4]))
-    st.write("Category: ", str(df.iat[rand_num, 1]).lower())
+    st.write("Category: ", str(df.iat[rand_num, 1]))
 
 with col2:
   st.subheader("Bot's Insults")
