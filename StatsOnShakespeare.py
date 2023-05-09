@@ -26,9 +26,9 @@ if nav == "Summary":
     st.write(data.head(5))
     
     # Total number of Plays
-    st.write("Number of plays are: " + str(data['Play'].nunique()))
+    # st.write("Number of plays are: " + str(data['Play'].nunique()))
     # List of Plays
-    st.write(pd.DataFrame(data['Play'].unique().tolist(), columns=['Play Name']))
+    # st.write(pd.DataFrame(data['Play'].unique().tolist(), columns=['Play Name']))
 
 if nav == "Players": # Players per Play
     st.write("Number of Players per Play")
@@ -88,3 +88,6 @@ if nav == "Emotion": # Lines per Player in a given Play
     ax = sns.barplot(x='Lines',y='Player',data=p_line)
     ax.set(title=play, xlabel='Number of Lines', ylabel='Player')
     st.pyplot()
+    
+st.write('---')
+st.video('https://www.youtu.be/lv4fWhObaTM') # New York Times: There's no escaping Shakespeare
