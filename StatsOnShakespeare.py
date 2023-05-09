@@ -96,8 +96,8 @@ st.video('https://www.youtu.be/lv4fWhObaTM') # New York Times: There's no escapi
 st.write("""
 **Project Description:**\n
 This program conducts statistical analysis of Shakespeare's Complete Works.\n
-Program #1 graphs the number of appearing characters per play.
-Program #2 graphs the average number of lines per character per play.
-Program #3 graphs the number of lines for each character in a selected play.
-Program #4 graphs the frequency of a given theme as stated by each player.
+Program #1 graphs the number of appearing characters per play.\n
+Program #2 graphs the average number of lines per character per play.\n
+Program #3 graphs the number of lines for each character in a selected play.\n
+Program #4 graphs the frequency of a given theme as stated by each player.\n
 """)
