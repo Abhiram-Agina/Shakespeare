@@ -31,6 +31,7 @@ if nav == "Summary":
     st.write(pd.DataFrame(data['Play'].unique().tolist(), columns=['Play Name']))
 
 if nav == "Players": # Players per Play
+    st.write("Number of Players per Play")
     numberPlayers = data.groupby(['Play'])['Player'].nunique().sort_values(ascending= False).to_frame()
     numberPlayers['Play'] = numberPlayers.index.tolist()
     numberPlayers.columns = ['Num Players','Play']
@@ -42,7 +43,8 @@ if nav == "Players": # Players per Play
     ax.set(xlabel='Number of Players', ylabel='Play Name')
     st.pyplot()
 
-if nav == "Lines": # Average Lines per Player per Play
+if nav == "Lines": # PlayerLines per Play
+    st.write(" Number of PlayerLines per Play")
     plt.rcParams['figure.figsize']=(12.5,5)
     ax= sns.barplot(x='Play',y='PlayerLinenumber',data=data)
     plt.setp(ax.get_xticklabels(), rotation=90)
