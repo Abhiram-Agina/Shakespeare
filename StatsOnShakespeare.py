@@ -53,8 +53,10 @@ if nav == "Lines": # PlayerLines per Play
 if nav == "Play": # Lines per Player in a given Play
     # Lines per Player in a given Play
     # Players who dominate the stage (based on #lines spoken)
-
-    play = "Alls well that ends well" # NOTE: Change this Play name to get the #Lines per Player for that Play
+    
+    play = st.selectbox('Please select a play',data['Play'])
+    
+    # play = "Alls well that ends well" # NOTE: Change this Play name to get the #Lines per Player for that Play
     p_line = data[data['Play']==play].groupby('Player').count().sort_values(by='PlayerLine',ascending=False)['PlayerLine']
     p_line = p_line.to_frame()
     p_line['Player'] = p_line.index.tolist()
