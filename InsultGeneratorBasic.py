@@ -8,7 +8,7 @@ df = pd.read_csv(file)
 col1, col2 = st.columns(2)
 with col1:
   st.subheader("Bard's Insults")
-  if st.button('Insults from Shakespeare's Plays'):
+  if st.button("Insults from Shakespeare's Plays"):
     rand_num = random.randint(1, (df.shape[0] - 1))
 
     st.write("Topic: ", str(df.iat[rand_num, 1]).upper())
