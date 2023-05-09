@@ -20,7 +20,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 st.subheader("Statistical Analysis of the Works of Shakespeare")
     
-nav = st.sidebar.radio("Stats",["Summary", "Players", "Lines", "Chart4", "Chart5"])
+nav = st.sidebar.radio("Stats",["Summary", "Players", "Lines", "Play", "Chart5"])
 if nav == "Summary":
     st.write("first 5 records:")
     st.write(data.head(5))
@@ -48,4 +48,26 @@ if nav == "Lines": # PlayerLines per Play
     plt.rcParams['figure.figsize']=(12.5,5)
     ax= sns.barplot(x='Play',y='PlayerLinenumber',data=data)
     plt.setp(ax.get_xticklabels(), rotation=90)
+    st.pyplot()
+
+if nav == "Play": # Lines per Player in a given Play
+    st.write("Lines per Player in a given Play")
+    plt.rcParams['figure.figsize']=(12.5,5)
+    ax= sns.barplot(x='Play',y='PlayerLinenumber',data=data)
+    plt.setp(ax.get_xticklabels(), rotation=90)
+    st.pyplot()
+    
+    # Lines per Player in a given Play
+    # Players who dominate the stage (based on #lines spoken)
+
+    play = "Alls well that ends well" # NOTE: Change this Play name to get the #Lines per Player for that Play
+    p_line = data[data['Play']==play].groupby('Player').count().sort_values(by='PlayerLine',ascending=False)['PlayerLine']
+    p_line = p_line.to_frame()
+    p_line['Player'] = p_line.index.tolist()
+    p_line.index = np.arange(0,len(p_line))
+    p_line.columns=['Lines','Player']
+
+    plt.figure(figsize=(10,10))
+    ax = sns.barplot(x='Lines',y='Player',data=p_line)
+    ax.set(xlabel='Number of Players', ylabel='Play Name')
     st.pyplot()
