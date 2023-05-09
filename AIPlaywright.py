@@ -218,3 +218,6 @@ generated_text = generate_text(
                     temperature=1, 
                     start_string=u"ROMEO") #Start String is "ROMEO" --> feel free to change it; QUESTION: can you change this to a part of the Sonnet to see how it completes the Sonnet
 st.write(generated_text)
+
+st.write('---')
+st.video('https://www.youtu.be/K-aAUwAFZlQ') # Did Shakespeare write his Plays?
