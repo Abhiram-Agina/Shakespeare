@@ -73,9 +73,10 @@ if nav == "Emotion": # Lines per Player in a given Play
     # Players who dominate the stage (based on #lines spoken)
     
     play = st.selectbox('Please select a play', data['Play'].unique())
-    emotion = st.selectbox('Please select a play', ("Love", "Murder", "Alas", "Marry"))
+    emote = st.selectbox('Please select a play', ("Love", "Murder", "Alas", "Marry"))
+    emote = emote.lower()
     # play = "Alls well that ends well" # NOTE: Change this Play name to get the #Lines per Player for that Play
-    data = data[data['PlayerLine'].str.lower().str.contains(emotion)]
+    data = data[data['PlayerLine'].str.contains(emote)]
     p_line = data[data['Play']==play].groupby('Player').count().sort_values(by='PlayerLine',ascending=False)['PlayerLine']
     p_line = p_line.to_frame()
     p_line['Player'] = p_line.index.tolist()
