@@ -1,4 +1,7 @@
 streamlit
+h5py
+typing-extensions
+wheel
 nltk
 textblob
 wordcloud
