@@ -22,7 +22,7 @@ st.subheader("Statistical Analysis of the Works of Shakespeare")
     
 nav = st.sidebar.radio("Stats",["Summary", "Players", "Lines", "Play", "Emotion"])
 if nav == "Summary":
-    st.write("first 5 records:")
+    st.write("First 5 records of the Shakespeare Corpus:")
     st.write(data.head(5))
     
     # Total number of Plays
