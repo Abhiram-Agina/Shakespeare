@@ -73,7 +73,8 @@ if nav == "Emotion": # Lines per Player in a given Play
     # Players who dominate the stage (based on #lines spoken)
     
     play = st.selectbox('Please select a play', data['Play'].unique())
-    emote = st.selectbox('Please select an emotion to search', ("Love", "Murder", "Alas", "Marry"))
+    emote = st.text_input(''Please type an emotion/keyword to search')
+    #emote = st.selectbox('Please select an emotion to search', ("Love", "Murder", "Alas", "Marry"))
     st.write('Note: currently, this searches for the keyword - I will expand this to search for emotions')
     emote = emote.lower()
     # play = "Alls well that ends well" # NOTE: Change this Play name to get the #Lines per Player for that Play
