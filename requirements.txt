@@ -1,4 +1,5 @@
 streamlit
+protobuf~=4.21.6
 h5py
 typing-extensions
 wheel
@@ -12,7 +13,6 @@ spacy
 spacy-streamlit
 tensorflow
 newspaper3k
-protobuf==3.20.3
 en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0-py3-none-any.whl
 networkx
 seaborn
