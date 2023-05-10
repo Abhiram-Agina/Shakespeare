@@ -53,7 +53,7 @@ if nav == "Lines": # PlayerLines per Play
 if nav == "Play": # Lines per Player in a given Play
     # Lines per Player in a given Play
     # Players who dominate the stage (based on #lines spoken)
-    
+    st.write('Number of Lines per Player in a given Play')
     play = st.selectbox('Please select a play', data['Play'].unique())
     
     # play = "Alls well that ends well" # NOTE: Change this Play name to get the #Lines per Player for that Play
