@@ -1,5 +1,5 @@
 streamlit
-protobuf~=4.21.6
+protobuf~=3.20.3
 h5py
 typing-extensions
 wheel
